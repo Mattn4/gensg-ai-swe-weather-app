@@ -1,0 +1,8 @@
+target/*
+!target/weather-app-1.0.0.jar
+.git
+.gitignore
+README.md
+Dockerfile
+*.iml
+.idea/
