@@ -1,14 +1,21 @@
-# Use an official OpenJDK runtime as a parent image
-FROM eclipse-temurin:21-jre
-
-# Set the working directory inside the container
+# Stage 1: Build the application using Maven and OpenJDK 21
+FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
+COPY pom.xml .
+COPY src ./src
 
-# Copy the built jar file into the container
-COPY target/weather-app-1.0.0.jar app.jar
+RUN mvn clean package -DskipTests
+
+# Stage 2: Create the final Docker image using OpenJDK 21
+FROM eclipse-temurin:21-jdk
+VOLUME /tmp
+#WORKDIR /app
+
+# Copy the JAR from the build stage
+COPY --from=build /app/target/*.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
