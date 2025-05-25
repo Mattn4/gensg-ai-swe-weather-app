@@ -1,0 +1,9 @@
+com\example\weather\WeatherAppApplication.class
+com\example\weather\util\ValidationUtil.class
+com\example\weather\controller\WeatherApiController$WeatherResult.class
+com\example\weather\controller\WeatherApiController$WeatherRequest.class
+com\example\weather\service\WeatherService.class
+com\example\weather\controller\WeatherApiController.class
+com\example\weather\util\JsonUtil.class
+com\example\weather\api\WeatherApiClient.class
+com\example\weather\model\WeatherData.class

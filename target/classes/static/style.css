@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(120deg, #4f8ef7 0%, #aee1f9 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 480px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 32px 24px 24px 24px;
+}
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 18px;
+}
+label, select, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+select, input[type="text"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bcdffb;
+    box-sizing: border-box;
+}
+button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #174ea6;
+}
+.results {
+    margin-top: 28px;
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    min-width: 340px;
+}
+th, td {
+    padding: 8px 6px;
+    text-align: left;
+    word-break: break-word;
+}
+th {
+    background: #e3f0fb;
+    color: #2563eb;
+}
+tr:nth-child(even) {
+    background: #f7fbff;
+}
+.error {
+    color: #d32f2f;
+    background: #fff3f3;
+    border: 1px solid #f8bcbc;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 12px;
+}
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 16px 4vw 16px 4vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    label, select, input, button {
+        font-size: 1rem;
+    }
+    table, th, td {
+        font-size: 0.98rem;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        padding: 8px 2vw 8px 2vw;
+    }
+    th, td {
+        padding: 6px 2px;
+    }
+}

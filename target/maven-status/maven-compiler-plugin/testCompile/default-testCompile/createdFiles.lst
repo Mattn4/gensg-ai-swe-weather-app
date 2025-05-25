@@ -1,0 +1,5 @@
+com\example\weather\util\ValidationUtilTest.class
+com\example\weather\controller\WeatherApiControllerTest.class
+com\example\weather\service\WeatherServiceTest.class
+com\example\weather\api\WeatherApiClientTest.class
+com\example\weather\util\JsonUtilTest.class
