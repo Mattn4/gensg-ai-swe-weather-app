@@ -40,6 +40,17 @@
 
 ---
 
+## Live Demo
+
+You can access the WeatherApp online at:
+[https://gensg-ai-swe-weather-app.onrender.com/](https://gensg-ai-swe-weather-app.onrender.com/)
+
+**Note:**
+This app is hosted on Render’s free tier.
+If the app has been inactive, it may take up to 50 seconds or more to start due to Render’s free instance spin-down policy.
+
+---
+
 ## Example Output
 
 ```
